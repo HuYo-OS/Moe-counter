@@ -1,87 +1,91 @@
-.html
-头
-标题='萌计数器！
-meta（名称='视口'， 内容='宽度=设备宽度， 初始比例=1'）
-link（rel='icon'， type='image/png'， href='favicon.png'）
-link（rel='stylesheet'， href='https：//cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css'）
-link（rel='stylesheet'， href='style.css'）
-<!-- 全局网站代码 （gtag.js） - 谷歌分析 -->
-script（async， src='https：//www.googletagmanager.com/gtag/js？id=G-2RLWN5JXRL'）
-脚本。
-窗口.数据层 = 窗口.数据层 ||[];
-function gtag（）{dataLayer.push（arguments）;}
-gtag（'js'， new Date（））;
+html
+  head
+    title='Moe Counter!'
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', type='image/png', href='favicon.png')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css')
+    link(rel='stylesheet', href='style.css')
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async, src='https://www.googletagmanager.com/gtag/js?id=G-2RLWN5JXRL')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-gtag（'config'， 'G-2RLWN5JXRL'）;
+      gtag('config', 'G-2RLWN5JXRL');
 
-函数_evt_push（类型、类别、标签）{
-gtag（'event'， type， {
-“event_category”：类别，
-“event_label”：标签
+      function _evt_push(type, category, label){
+        gtag('event', type, {
+          'event_category' : category,
+          'event_label' : label
         });
       }
 
-身体
-h3 如何使用：
+  body
+    h3 如何使用:
 
-h5 SVG 地址
-代码 https://count.littlebell.top/get/@:name
+    h5 SVG address
+    code https://count.littlebell.top/get/@:name
 
-h5 Img 标签
-法典
+    h5 Img tag
+    code &lt;img src="https://count.littlebell.top/get/@:name" alt=":name" />
 
-h5降价
-法典！[：名称]（https://count.littlebell.top/get/@:name）
+    h5 Markdown
+    code ![:name](https://count.littlebell.top/get/@:name)
 
-h3 例如：
-<img src=“https://count.littlebell.top/get/@index” alt=“Moe Count！” />
-详
-摘要（样式='显示：内联块;'， onclick='_evt_push（“click”， “normal”， “more_theme”）'）
-h3（style='display： inline-block;光标： 指针;'） <span style=“color： #00EFFC;”> 更多主题 </span>
-p（style='margin： 0;'） 只需使用查询参数 <code>theme</code>， 如下所示： <code>https://count.littlebell.top/get/@:name?theme=moebooru</code>
-H5 阿苏尔
-img（src='https：//count.littlebell.top/get/@demo？theme=asoul'， alt='A-SOUL'）
-H5 萌萌
-img（src='https：//count.littlebell.top/get/@demo？theme=moebooru'， alt='Moebooru'）
-H5 莫布鲁-H
-img（src='https：//count.littlebell.top/get/@demo？theme=moebooru-h'， alt='Moebooru-Hentai'）
-H5 规则34
-img（src='https：//count.littlebell.top/get/@demo？theme=rule34'， alt='Rule34'）
-H5 盖尔布鲁
-img（src='https：//count.littlebell.top/get/@demo？theme=gelbooru'， alt='Gelbooru'）
-H5 盖尔布鲁-H
-img（src='https：//count.littlebell.top/get/@demo？theme=gelbooru-h'， alt='Gelbooru-Hentai'）
+    h3 eg:
+      <img src="https://count.littlebell.top/get/@index" alt="Moe Count!" />
 
-h3 学分
-UL
-李
-a（href='https：//repl.it/'， target='_blank'， rel='nofollow'） repl.it
-李
-a（href='https：//www.asoulworld.com/'， target='_blank'， title='A-SOUL导航站（非官方）'） A-SOUL
-李
-a（href='https：//github.com/moebooru/moebooru'， target='_blank'， rel='nofollow'） Moebooru
-李
-a（href='JavaScript：alert（“!!!NSFW链接!!!\\n请手动输入网址“）'） rule34.xxx
-|NSFW
-李
-a（href='JavaScript：alert（“!!!NSFW链接!!!\\n请手动输入网址“）'） gelbooru.com
-|NSFW
-李
-a（href='https：//icons8.com/icons/set/star'， target='_blank'， rel='nofollow'） 图标8
+    i 任何人都可以访问这些数据，
+      | <span style="color: #ff4500;"> 请不要输入个人信息。</span>
 
-    h3 工具
+    details
+      summary(style='display: inline-block;', onclick='_evt_push("click", "normal", "more_theme")')
+        h3(style='display: inline-block; cursor: pointer;') 更多主题
+      p(style='margin: 0;') 只要使用查询参数<code>theme</code>，就像这样:<code>https://count.littlebell.top/get/@:name?theme=moebooru</code>
+      h5 asoul
+      img(src='https://count.littlebell.top/get/@name?theme=asoul', alt='A-SOUL')
+      h5 moebooru
+      img(src='https://count.littlebell.top/get/@name?theme=moebooru', alt='Moebooru')
+      h5 moebooru-h
+      img(src='https://count.littlebell.top/get/@name?theme=moebooru-h', alt='Moebooru-Hentai')
+      h5 rule34
+      img(src='https://count.littlebell.top/get/@name?theme=rule34', alt='Rule34')
+      h5 gelbooru
+      img(src='https://count.littlebell.top/get/@name?theme=gelbooru', alt='Gelbooru')
+      h5 gelbooru-h
+      img(src='https://count.littlebell.top/get/@name?theme=gelbooru-h', alt='Gelbooru-Hentai')
+
+    h3 Credits
+    ul
+      li
+        a(href='https://repl.it/', target='_blank', rel='nofollow') repl.it
+      li
+        a(href='https://space.bilibili.com/703007996', target='_blank', title='A-SOUL_Official') A-SOUL
+      li
+        a(href='https://github.com/moebooru/moebooru', target='_blank', rel='nofollow') moebooru
+      li
+        a(href='javascript:alert("!!! NSFW LINK !!!\\nPlease enter the url manually")') rule34.xxx
+        |  NSFW
+      li
+        a(href='javascript:alert("!!! NSFW LINK !!!\\nPlease enter the url manually")') gelbooru.com
+        |  NSFW
+      li
+        a(href='https://icons8.com/icons/set/star', target='_blank', rel='nofollow') Icons8
+
+    h3 Tool
     .tool
       code https://count.littlebell.top/get/@
-input#name（type='text'， 占位符='name'， style='display： inline-block; width： 110px; height： 1.4em; line-height： 1.4em; margin： 0 4px; vertical-align： middle;'）
+      input#name(type='text', placeholder=':name', style='display: inline-block; width: 80px; height: 1.4em; line-height: 1.4em; margin: 0 4px; vertical-align: middle;')
       code ?theme=
-选择#theme（style='display： inline-block; height： 1.6em; line-height： 1.6em; font-size： 14px; margin： 0 4px; padding： 0 4px; vertical-align： middle;'）
-        option(value='asoul') 主题
+      select#theme(style='display: inline-block; height: 1.6em; line-height: 1.6em; font-size: 14px; margin: 0 4px; padding: 0 4px; vertical-align: middle;')
+        option(value='asoul') asoul
         option(value='moebooru') moebooru
         option(value='moebooru-h') moebooru-h
         option(value='rule34') rule34
         option(value='gelbooru') gelbooru
         option(value='gelbooru-h') gelbooru-h
-button#get（style='margin： 10px 0;'， onclick='_evt_push（“click”， “normal”， “get_counter”）'） Get
+      button#get(style='margin: 10px 0;', onclick='_evt_push("click", "normal", "get_counter")') Get
       img#result(style='display: block;')
 
       script.
@@ -92,9 +96,9 @@ button#get（style='margin： 10px 0;'， onclick='_evt_push（“click”， �
           var name = document.getElementById('name'),
               themeEl = document.getElementById('theme')
           var text = name.value ? name.value.trim() : ''
-var 主题 = 主题El.value ||“萌萌”
+          var theme = themeEl.value || 'moebooru'
           if(!text) {
-警报（“请输入计数器名称。
+            alert('Please input counter name.')
             return
           }
 
@@ -102,4 +106,4 @@ var 主题 = 主题El.value ||“萌萌”
         })
 
     p.copy
-      a(href='https://github.com/journey-ad/Moe-counter', target='_blank', onclick='_evt_push("click", "normal", "go_github")') Source code
+      a(href='https://github.com/journey-ad/Moe-Counter', target='_blank', onclick='_evt_push("click", "normal", "go_github")') source code
