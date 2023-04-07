@@ -2,7 +2,7 @@
 
 多种风格可选的萌萌计数器
 
-![Moe-Counter](https://count.getloli.com/get/@Moe-counter.github)
+![Moe-Counter](https://count.littlebell.top/get/@demo)
 
 <details>
 <summary>More theme</summary>
