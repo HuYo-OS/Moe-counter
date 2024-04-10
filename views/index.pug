@@ -3,60 +3,43 @@ html
     title='Moe Counter!'
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='icon', type='image/png', href='favicon.png')
-    link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css')
+    link(rel='stylesheet', href='light.min.css')
     link(rel='stylesheet', href='style.css')
 
   body
     h3 如何使用:
 
     h5 SVG address
-    code https://count.littlebell.top/get/@:name
+    code https://count.littlebell.top/get/@demo
 
     h5 Img tag
-    code &lt;img src="https://count.littlebell.top/get/@:name" alt=":name" />
+    code &lt;img src="https://count.littlebell.top/get/@demo" alt=":name" />
 
     h5 Markdown
-    code ![:name](https://count.littlebell.top/get/@:name)
+    code ![:name](https://count.littlebell.top/get/@demo)
 
     h3 eg:
-      <img src="https://count.littlebell.top/get/@index" alt="Moe Count!" />
+      <img src="https://count.littlebell.top/get/@demo" alt="Moe Count!" />
 
     i 任何人都可以访问这些数据，
       | <span style="color: #ff4500;"> 请不要输入个人信息。</span>
 
     details
       summary(style='display: inline-block;', onclick='_evt_push("click", "normal", "more_theme")')
-        h3(style='display: inline-block; cursor: pointer;') 更多主题
-      p(style='margin: 0;') 只要使用查询参数<code>theme</code>，就像这样:<code>https://count.littlebell.top/get/@:name?theme=moebooru</code>
+        h3(style='display: inline-block; cursor: pointer; color: blue;') 更多主题
+      p(style='margin: 0;') 只要使用查询参数<code>theme</code>，就像这样:<code>https://count.littlebell.top/get/@demo?theme=moebooru</code>
       h5 asoul
-      img(src='https://count.littlebell.top/get/@name?theme=asoul', alt='A-SOUL')
+      img(src='https://count.littlebell.top/get/@demo?theme=asoul', alt='A-SOUL')
       h5 moebooru
-      img(src='https://count.littlebell.top/get/@name?theme=moebooru', alt='Moebooru')
+      img(src='https://count.littlebell.top/get/@demo?theme=moebooru', alt='Moebooru')
       h5 moebooru-h
-      img(src='https://count.littlebell.top/get/@name?theme=moebooru-h', alt='Moebooru-Hentai')
+      img(src='https://count.littlebell.top/get/@demo?theme=moebooru-h', alt='Moebooru-Hentai')
       h5 rule34
-      img(src='https://count.littlebell.top/get/@name?theme=rule34', alt='Rule34')
+      img(src='https://count.littlebell.top/get/@demo?theme=rule34', alt='Rule34')
       h5 gelbooru
-      img(src='https://count.littlebell.top/get/@name?theme=gelbooru', alt='Gelbooru')
+      img(src='https://count.littlebell.top/get/@demo?theme=gelbooru', alt='Gelbooru')
       h5 gelbooru-h
-      img(src='https://count.littlebell.top/get/@name?theme=gelbooru-h', alt='Gelbooru-Hentai')
-
-    h3 Credits
-    ul
-      li
-        a(href='https://repl.it/', target='_blank', rel='nofollow') repl.it
-      li
-        a(href='https://space.bilibili.com/703007996', target='_blank', title='A-SOUL_Official') A-SOUL
-      li
-        a(href='https://github.com/moebooru/moebooru', target='_blank', rel='nofollow') moebooru
-      li
-        a(href='javascript:alert("!!! NSFW LINK !!!\\nPlease enter the url manually")') rule34.xxx
-        |  NSFW
-      li
-        a(href='javascript:alert("!!! NSFW LINK !!!\\nPlease enter the url manually")') gelbooru.com
-        |  NSFW
-      li
-        a(href='https://icons8.com/icons/set/star', target='_blank', rel='nofollow') Icons8
+      img(src='https://count.littlebell.top/get/@demo?theme=gelbooru-h', alt='Gelbooru-Hentai')
 
     h3 Tool
     .tool
