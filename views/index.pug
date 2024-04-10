@@ -10,16 +10,16 @@ html
     h3 如何使用:
 
     h5 SVG address
-    code https://count.littlebell.top/get/@demo
+    code #{site}/get/@demo
 
     h5 Img tag
-    code &lt;img src="https://count.littlebell.top/get/@demo" alt=":name" />
+    code &lt;img src="#{site}/get/@demo" alt="demo" />
 
     h5 Markdown
-    code ![:name](https://count.littlebell.top/get/@demo)
+    code ![:name](#{site}/get/@demo)
 
     h3 eg:
-      <img src="https://count.littlebell.top/get/@demo" alt="Moe Count!" />
+      <img src="#{site}/get/@demo" alt="Moe Count!" />
 
     i 任何人都可以访问这些数据，
       | <span style="color: #ff4500;"> 请不要输入个人信息。</span>
@@ -27,24 +27,24 @@ html
     details
       summary(style='display: inline-block;', onclick='_evt_push("click", "normal", "more_theme")')
         h3(style='display: inline-block; cursor: pointer; color: blue;') 更多主题
-      p(style='margin: 0;') 只要使用查询参数<code>theme</code>，就像这样:<code>https://count.littlebell.top/get/@demo?theme=moebooru</code>
+      p(style='margin: 0;') 只要使用查询参数<code>theme</code>，就像这样:<code>#{site}/get/@demo?theme=moebooru</code>
       h5 asoul
-      img(src='https://count.littlebell.top/get/@demo?theme=asoul', alt='A-SOUL')
+      <img src="#{site}/get/@demo?theme=asoul" alt='A-SOUL' />
       h5 moebooru
-      img(src='https://count.littlebell.top/get/@demo?theme=moebooru', alt='Moebooru')
+      <img src="#{site}/get/@demo?theme=moebooru" alt='Moebooru' />
       h5 moebooru-h
-      img(src='https://count.littlebell.top/get/@demo?theme=moebooru-h', alt='Moebooru-Hentai')
+      <img src="#{site}/get/@demo?theme=moebooru-h" alt='Moebooru-Hentai' />
       h5 rule34
-      img(src='https://count.littlebell.top/get/@demo?theme=rule34', alt='Rule34')
+      <img src="#{site}/get/@demo?theme=rule34" alt='Rule34' />
       h5 gelbooru
-      img(src='https://count.littlebell.top/get/@demo?theme=gelbooru', alt='Gelbooru')
+      <img src="#{site}/get/@demo?theme=gelbooru" alt='Gelbooru' />
       h5 gelbooru-h
-      img(src='https://count.littlebell.top/get/@demo?theme=gelbooru-h', alt='Gelbooru-Hentai')
+      <img src="#{site}/get/@demo?theme=gelbooru-h" alt='Gelbooru-Hentai' />
 
     h3 Tool
     .tool
-      code https://count.littlebell.top/get/@
-      input#name(type='text', placeholder=':name', style='display: inline-block; width: 80px; height: 1.4em; line-height: 1.4em; margin: 0 4px; vertical-align: middle;')
+      code #{site}/get/@
+      input#name(type='text', placeholder='demo', style='display: inline-block; width: 80px; height: 1.4em; line-height: 1.4em; margin: 0 4px; vertical-align: middle;')
       code ?theme=
       select#theme(style='display: inline-block; height: 1.6em; line-height: 1.6em; font-size: 14px; margin: 0 4px; padding: 0 4px; vertical-align: middle;')
         option(value='asoul') asoul
@@ -70,7 +70,7 @@ html
             return
           }
 
-          img.src = 'https://count.littlebell.top/get/@' + text + '?theme=' + theme
+          img.src = '#{site}/get/@' + text + '?theme=' + theme
         })
 
     p.copy

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  moe-counter:
+    image: moe-count:latest
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/count.db:/app/count.db
+      - ./data/config.yml:/app/config.yml
