@@ -8,19 +8,19 @@
 <summary>More theme</summary>
 
 ##### asoul
-![asoul](https://count.getloli.com/get/@demo?theme=asoul)
+![asoul](https://count.littlebell.top/get/@demo?theme=asoul)
 
 ##### moebooru
-![moebooru](https://count.getloli.com/get/@demo?theme=moebooru)
+![moebooru](https://count.littlebell.top/get/@demo?theme=moebooru)
 
 ##### rule34
-![Rule34](https://count.getloli.com/get/@demo?theme=rule34)
+![Rule34](https://count.littlebell.top/get/@demo?theme=rule34)
 
 ##### gelbooru
-![Gelbooru](https://count.getloli.com/get/@demo?theme=gelbooru)</details>
+![Gelbooru](https://count.littlebell.top/get/@demo?theme=gelbooru)</details>
 
 ## Demo
-[https://count.getloli.com](https://count.getloli.com)
+[https://count.littlebell.top](https://count.littlebell.top)
 
 ## Usage
 
